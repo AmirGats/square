@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --RFDewi: "RF Dewi";
+  --dark-aqua: #008a91;
+  --color-footer: #94dbe4;
+  --light-aqua: #008a9133;
+  --SmallText: 16px;
+  --MidleText: 20px;
+  --BigText: 48px;
+  --Bebas: "Bebas Neue", sans-serif;
+  --Textforteam: 40px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: 0;
+  font-family: var(--RFDewi);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+input {
+  border: 0;
+}
+.container {
+  max-width: 1205px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__inner {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.header__call {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav a {
+  font-weight: 700;
+  color: #2c3242;
+  font-size: 16px;
+}
+.header__call a {
+  font-weight: 700;
+  color: #2c3242;
+  font-size: 20px;
+}
+#services {
+  padding-top: 80px;
+}
+
+.services__text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--Bebas);
+  font-size: var(--BigText);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.services__content {
+  width: 489px;
+  font-size: var(--SmallText);
+  padding-top: 20px;
+}
+.line {
+  background-color: var(--dark-aqua);
+  width: 170px;
+  height: 3px;
+}
+.advantages__inner {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.advantages__item-parent {
+  position: relative;
+  width: 285px;
+  height: 115px;
+  background-color: var(--light-aqua);
+  border: solid var(--dark-aqua);
+  border-radius: 7px;
+}
+.advantages__item {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  background-color: var(--dark-aqua);
+  border-radius: 50%;
+  left: 90.5px;
+  bottom: 75px;
+}
+.advantages__item-img {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.advantages__item-text {
+  font-size: var(--SmallText);
+  text-align: center;
+  padding-top: 55px;
+}
+
+.picture-services__inner {
+  display: flex;
+  padding-top: 50px;
+  gap: 30px;
+}
+.picture-services__img img {
+  width: 100%;
+}
+.picture-services__text {
+  display: flex;
+  flex-direction: column;
+}
+.btn__service {
+  width: 298px;
+  height: 59px;
+  background-color: var(--dark-aqua);
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  line-height: 59px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 40px;
+  position: relative;
+}
+.btn__decor {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: #94dbe4;
+  top: 20px;
+  left: 260px;
+  z-index: -1;
+}
+
+.price__inner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.price__title {
+  font-size: var(--BigText);
+  font-weight: 700;
+}
+.price__frame {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 287px;
+  margin-top: 50px;
+}
+.price__img {
+  width: 100%;
+}
+.price-text {
+  display: flex;
+  justify-content: space-between;
+}
+.price-text span {
+  font-size: var(--MidleText);
+}
+.price__for__img {
+  font-weight: 700;
+  font-size: var(--MidleText);
+}
+.price__frame__all {
+  display: flex;
+  gap: 20px;
+}
+.price__circle {
+  display: flex;
+  gap: 13px;
+  padding-top: 30px;
+  justify-content: center;
+}
+.circle-active {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--dark-aqua);
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--light-aqua);
+}
+.team__inner {
+  padding: 60px 0;
+  margin-bottom: 100px;
+}
+
+.team__header {
+  text-align: center; /* Центрирование заголовка */
+  margin-bottom: 30px; /* Отступ снизу */
+}
+
+.team__title {
+  font-size: 2.5rem; /* Размер шрифта заголовка */
+  color: #333; /* Цвет текста заголовка */
+  margin: 0; /* Убираем отступы */
+}
+
+.team__line {
+  width: 60px; /* Ширина линии */
+  height: 4px; /* Высота линии */
+  background-color: var(--dark-aqua); /* Цвет линии */
+  margin: 10px auto; /* Центрирование линии */
+}
+
+.team__description {
+  font-size: 1.2rem; /* Размер шрифта описания */
+  color: #666; /* Цвет текста описания */
+  text-align: center; /* Центрирование текста */
+  margin-bottom: 40px; /* Отступ снизу */
+}
+
+.team__members {
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: space-between; /* Распределяем элементы по горизонтали */
+  flex-wrap: wrap; /* Позволяем перенос элементов */
+}
+
+.team__member {
+  background-color: #fff; /* Цвет фона для каждого члена команды */
+  border-radius: 10px; /* Скругление углов */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  padding: 20px; /* Отступы внутри карточки */
+  text-align: center; /* Центрирование текста */
+  flex: 1 1 30%; /* Задаем гибкость и размер карточки */
+  margin: 10px; /* Отступ между карточками */
+  position: relative; /* Для позиционирования кнопок */
+}
+
+.team__member-image-wrapper {
+  position: relative; /* Для позиционирования номера */
+}
+
+.team__member-image {
+  width: 100%; /* Ширина изображения */
+  border-radius: 10px; /* Скругление углов изображения */
+}
+
+.team__member-number {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 10px; /* Отступ сверху */
+  left: 10px; /* Отступ слева */
+  font-size: 1.5rem; /* Размер шрифта номера */
+  color: #fff; /* Цвет текста номера */
+  background-color: var(--dark-aqua); /* Полупрозрачный фон */
+  padding: 5px 10px; /* Отступы */
+  border-radius: 5px; /* Скругление углов */
+}
+
+.team__member-info {
+  margin-top: 15px; /* Отступ сверху для информации о члене команды */
+}
+
+.team__member-name {
+  font-size: 1.5rem; /* Размер шрифта имени */
+  color: #333; /* Цвет имени */
+  margin: 0; /* Убираем отступы */
+}
+
+.team__member-rank {
+  font-size: 1rem; /* Размер шрифта ранга */
+  color: #777; /* Цвет ранга */
+  margin: 5px 0 0; /* Отступ сверху для ранга */
+}
+
+.team__scroll-button {
+  background: transparent; /* Прозрачный фон для кнопок */
+  border: none; /* Убираем границы у кнопок */
+  cursor: pointer; /* Курсор в виде руки */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translateY(-50%); /* Центрирование по вертикали */
+}
+
+.team__scroll-left {
+  left: -40px; /* Отступ слева для кнопки прокрутки влево */
+}
+
+.team__scroll-right {
+  right: -40px; /* Отступ справа для кнопки прокрутки вправо */
+}
+
+.team__member-big {
+  flex: 1 1 100%; /* Занимает всю ширину */
+  margin-top: 30px; /* Отступ сверху */
+  text-align: center; /* Центрирование текста */
+}
+
+.team__member-big-image-wrapper {
+  position: relative; /* Для позиционирования номера */
+}
+
+.team__member-big-image {
+  width: 100%; /* Ширина большого изображения */
+  border-radius: 10px; /* Скругление углов большого изображения */
+}
+
+.team__member-big-number {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 10px; /* Отступ сверху */
+  left: 10px; /* Отступ слева */
+  font-size: 2rem; /* Размер шрифта номера */
+  color: #fff; /* Цвет текста номера */
+  background-color: var(--dark-aqua); /* Полупрозрачный фон */
+  padding: 10px 15px; /* Отступы */
+  border-radius: 5px; /* Скругление углов */
+}
+
+.great__interier__inner {
+  padding: 60px 0; /* Отступы сверху и снизу */
+  background-color: #f0f0f0; /* Цвет фона секции */
+  
+}
+
+.container-interier{
+  display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: row; /* Горизонтальное выравнивание */
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: space-between; /* Распределение элементов */
+}
+
+.great__interier__text {
+  flex: 1; /* Занимает оставшееся пространство */
+  padding-right: 30px; /* Отступ справа для текста */
+}
+
+.great__interier__title {
+  text-align: left; /* Выравнивание заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.line-interier {
+  width: 60px; /* Ширина линии */
+  height: 4px; /* Высота линии */
+  background-color: var(--dark-aqua); /* Цвет линии */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.great__interier__content {
+  font-size: 1.1rem; /* Размер шрифта контента */
+  color: #555; /* Цвет текста */
+  line-height: 1.6; /* Межстрочный интервал */
+  margin-bottom: 30px; /* Отступ снизу */
+}
+
+.great__interier__part2 {
+  display: flex; /* Используем flexbox для выравнивания */
+  align-items: center; /* Центрирование по вертикали */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.great__interier__part2 p {
+  margin-left: 10px; /* Отступ слева для текста "Learn more" */
+  font-weight: bold; /* Жирный текст */
+  color: var(--dark-aqua); /* Цвет текста */
+  cursor: pointer; /* Курсор в виде руки */
+}
+
+.great__interier__btn {
+  background-color: var(--dark-aqua); /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  border: none; /* Убираем границы у кнопки */
+  border-radius: 5px; /* Скругление углов */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  font-size: 1rem; /* Размер шрифта кнопки */
+  cursor: pointer; /* Курсор в виде руки */
+  position: relative; /* Для позиционирования декора */
+  overflow: hidden; /* Скрытие лишнего содержимого */
+  width: 100%;
+}
+
+.btn__decor {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 100%; /* Ширина декора */
+  height: 100%; /* Высота декора */
+  background-color: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый фон */
+  top: 0; /* Позиционирование сверху */
+  left: -100%; /* Начальное положение слева */
+  transition: left 0.3s; /* Плавный переход */
+}
+
+.great__interier__btn:hover .btn__decor {
+  left: 0; /* Декор появляется при наведении */
+}
+
+.great__interier__img {
+  flex: 1; /* Занимает оставшееся пространство */
+  max-width: 500px; /* Максимальная ширина изображения */
+}
+
+.great__interier__img img {
+  width: 100%; /* Ширина изображения */
+  border-radius: 10px; /* Скругление углов изображения */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+}
+
+.partner__inner {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 90px;
+}
+.partner__title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: var(--BigText);
+  font-family: var(--Bebas);
+  font-weight: 700;
+}
+.our__partner {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+}
+.contacts__inner {
+  margin: 30px 0;
+  padding: 60px 0; /* Отступы сверху и снизу */
+  background-color: #f0f0f0; /* Цвет фона секции */
+}
+
+.container-map {
+  display: flex; /* Используем flexbox для выравнивания */
+  flex-direction: row; /* Горизонтальное выравнивание */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  justify-content: space-between; /* Распределение элементов */
+}
+
+.contacts__text {
+  flex: 1; /* Занимает оставшееся пространство */
+  padding-right: 30px; /* Отступ справа для текста */
+}
+
+.contact__title {
+  font-size: 2rem; /* Размер шрифта заголовка */
+  margin-bottom: 10px; /* Отступ снизу */
+  font-weight: 700;
+}
+
+.line {
+  width: 60px; /* Ширина линии */
+  height: 4px; /* Высота линии */
+  background-color: var(--dark-aqua); /* Цвет линии */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.contact__content {
+  font-size: 1rem; /* Размер шрифта контента */
+  color: #555; /* Цвет текста */
+  line-height: 1.6; /* Межстрочный интервал */
+}
+
+.contacts__map {
+  flex: 1; /* Занимает оставшееся пространство */
+  max-width: 600px; /* Максимальная ширина карты */
+}
+
+.contacts__map iframe {
+  width: 100%; /* Ширина карты */
+  height: 100%; /* Высота карты */
+  border: 0; /* Убираем границы */
+  border-radius: 10px; /* Скругление углов карты */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для карты */
+}
+
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  background-color: var(--color-footer);
+}
+.footer__logo {
+  margin: 45px;
+}
+.footer__href {
+  display: flex;
+  margin: 45px;
+  gap: 40px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 45px;
+  row-gap: 20px;
+}
+.footer__number {
+  font-weight: 700;
+  font-size: var(--MidleText);
+}
+.footer__massege {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+/* Общие стили для всех медиа-запросов */
+.header__nav a,
+.header__call a {
+    transition: font-size 0.3s ease;
+}
+
+.services__content p {
+    transition: font-size 0.3s ease, width 0.3s ease;
+}
+
+.btn__service,
+.btn__decor {
+    transition: width 0.3s ease, height 0.3s ease;
+}
+.great__interier__title,
+    .great__interier__part2,
+    .partner__title,
+    .team__title,
+    .price__title,
+    .contact__title {
+        font-size: 34px;
+    }
+
+/* Мобильные стили */
+@media (max-width: 1221px) {
+    .header__nav {
+        gap: 50px;
+    }
+    .header__call a {
+        font-size: 15px;
+    }
+    .header__nav a {
+        font-size: 13px;
+    }
+    .advantages__inner {
+        gap: 2em;
+    }
+    .services__content p {
+        font-size: 14px;
+        width: 367px;
+    }
+    .services__text {
+        font-size: 33px;
+    }
+    .btn__service {
+        width: 227px;
+        height: 51px;
+        line-height: 51px;
+    }
+    .team__info-big {
+        display: none;
+    }
+    .our__partner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 993px) {
+    .header__call img {
+        display: none;
+    }
+    .header__call a {
+        font-size: 17px;
+    }
+    .header__nav {
+        gap: 40px;
+    }
+    .header__nav a {
+        font-size: 11px;
+    }
+    .services__content p {
+        width: 305px;
+        font-size: 9px;
+    }
+    .picture-services__inner {
+        display: flex;
+        padding-top: 50px;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+    .team__info2 {
+        display: none;
+    }
+    .great__interier__content {
+        font-size: 12px;
+    }
+    .great__interier__title,
+    .great__interier__part2,
+    .partner__title,
+    .team__title,
+    .price__title,
+    .contact__title {
+        font-size: 24px;
+    }
+    .contact__content {
+        width: 328px;
+    }
+    .team__member-number {
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 918px) {
+    .header__call a {
+        font-size: 14px;
+    }
+    .header__nav {
+        gap: 20px;
+    }
+    .header__nav a {
+        font-size: 12px;
+    }
+    .services__text {
+        font-size: 35px;
+    }
+    .price__title,
+    .team__title,
+    .partner__title {
+        font-size: 30px;
+    }
+    .services__content {
+        width: 440px;
+    }
+    .contact__title {
+        font-size: 30px;
+    }
+    .contact__content {
+        width: 231px;
+        font-size: 12px;
+    }
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        row-gap: 20px;
+    }
+    .container-interier{
+      display: block;
+    }
+
+    .great__interier__text {
+      margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 667px) {
+    .header__call a {
+        display: none;
+    }
+    .services__text {
+        font-size: 30px;
+    }
+    .services__content {
+        width: 315px;
+        font-size: 11px;
+    }
+    .advantages__inner {
+        padding-top: 100px;
+    }
+    .advantages__item-text {
+        font-size: 14px;
+    }
+    .team__info1 {
+        position: absolute;
+        left: 128px;
+    }
+    .contacts__inner {
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .header__nav img {
+        width: 40px;
+        height: 40px;
+    }
+    .advantages__item {
+      left: 58.5px;
+      bottom: 60px;
+    }
+    .advantages__item-text {
+        font-size: 12px;
+    }
+    .advantages__item-parent {
+        width: 200px;
+        height: 101px;
+    }
+    .team__info1 {
+        width: 298px;
+        position: absolute;
+        left: 70px;
+    }
+    .our__partner {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacts__map {
+        display: none;
+    }
+    .contacts__inner{
+      padding-top: 10px;
+    }
+
+    .footer__inner {
+      flex-direction: column; /* Вертикальное выравнивание на мобильных устройствах */
+      align-items: center; /* Центрирование элементов */
+  }
+
+  .footer__href {
+      justify-content: center; /* Центрирование ссылок */
+  }
+
+  .footer__href ul {
+      margin: 10px 0; /* Отступы между списками */
+  }
+
+  .footer__number {
+      font-size: 14px; /* Уменьшаем размер шрифта для номера */
+  }
+
+  .footer__massege img {
+      width: 20px; /* Уменьшаем размер иконок */
+      height: 20px; /* Уменьшаем размер иконок */
+  }
+}
+
